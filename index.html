@@ -3,7 +3,106 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Морда»</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
+    <div class="layout">
+        <div class="header-city">
+            <article class="city">
+                <a href="#">
+                    <div></div>
+                    Екатеринбург
+                </a>
+            </article>
+        </div>
+
+        <div class="header-settings">
+            <div class="settings">
+                <p>Настройка</p>
+            </div>
+        </div>
+
+        <div class="header-mail">
+            <article class="mail">
+                <p class="bold">
+                    <span class="ya-red">l</span>ogin
+                </p>
+                <p class="postcard">
+                    <span>Почта</span>
+                    <span class="bold">123</span>
+                </p>
+            </article>
+        </div>
+
+        <div class="main-news">
+            <div class="news-header">
+                <a href>Сейчас в СМИ</a>
+                <a href>в Екатеринбурге</a>
+                <span class="news-date">21 ноября, вторник 3:08</span>
+            </div>
+            <ul>
+                <li>В Кремле ответили на слова экс-главы ЦРУ о «запуганном»
+                Путиным Трампе</li>
+                <li>Число жертв землетрясения в Иране и Ираке превысило
+                350 человек</li>
+                <li>Вероятной целью проникновения в РФ украинского
+                дрона назвали шпионаж</li>
+                <li>Кремль рассказал о местонахождении в Сирии не
+                явившегося в суд Сечина</li>
+                <li>Кремль прокомментировал перенос послания Путина
+                Федеральному собранию</li>
+            </ul>
+            <div class="rates">
+                <span class="currency bold">USD ЦБ</span>
+                <span class="value">59,18</span>
+                <span class="value-change">-0,10</span>
+                <span class="currency bold">EUR ЦБ</span>
+                <span class="value">68,92</span>
+                <span class="value-change">-0,06</span>
+                <span class="currency bold">НЕФТЬ</span>
+                <span class="value">63,44</span>
+                <span class="value-change">-0,27%</span>
+            </div>
+        </div>
+
+        <div class="adv">
+            <img src="https://yandex.ru/clck/redir/dtype=stred/sid=1511255795.11515.22896.24378/pid=198/cid=198/path=tech.portal-ads.teaser/vars=-reqid=1511255795143-318126-sas1-0991-ATOMS-distr_portal,-showid=020109301511255795143318126109,-device=desktop,-type=inline,-bannerid=4216496141,-score=279,-lr=54,-product=home,-substhash=919016196,-subst=bGFsZmlvZG9oZGdhZWpqY2NmZ2ZtbW5nZ2dwcGxtaHA=,-adata=tkvrY8hnx_tOEyakvrjHtszTAgotJbE62NQMccE4JEIxT2uOV1LBlF0hjSKCCtrtPuEK3fzTVII=,-eventtype=show/*data=url%3Dhttps%253A%252F%252Favatars.mds.yandex.net%252Fget-banana%252F41024%252Fh53G4yqc5uKmtax_cbrwN_banana_20161021_redpushpin-1.png%252Foptimize%26ts%3D1511255795%26uid%3D8963988021495366563&amp;sign=b7afcf3bc27b89c854ea93efbad23a53&amp;keyno=12" width="100" height="70" alt="Сделать Яндекс стартовой страницей">
+            <p class="teaser-title"><a href>Домашний Яндекс</a></p>
+            <p class="teaser-description">Сделайте yandex<br>стартовой страницей</p>
+        </div>
+
+        <div class="search-logo">
+            <div class="logo">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPAAAAB4CAIAAABD1OhwAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RTdFRTFBQkM2Q0IyMTFFNjlBMTFGRERBNjhDOTk0NzAiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RTdFRTFBQkQ2Q0IyMTFFNjlBMTFGRERBNjhDOTk0NzAiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpFODlDQkY3NzZDNTIxMUU2OUExMUZEREE2OEM5OTQ3MCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpFODlDQkY3ODZDNTIxMUU2OUExMUZEREE2OEM5OTQ3MCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PtgmSw8AAA1nSURBVHja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">
+            </div>
+        </div>
+
+        <div class="search-box">
+            <section class="search-header">
+                <a href="">Видео</a>
+                <a href="">Картинки</a>
+                <a href="">Новости</a>
+                <a href="">Карты</a>
+                <a href="">Маркет</a>
+                <a href="">Переводчик</a>
+                <a href="">Музыка</a>
+                <a href="">еще</a>
+            </section>
+            <div class="search-line">
+                <form>
+                    <input type="search" class="search">
+                    <button type="submit" class="button">Найти</button>
+                </form>
+            </div>
+            <div>
+                <p>Найдется всё. Например</p>
+            </div>
+        </div>
+
+        <section class="adv-block">
+            <img alt="adv" title="adv" src="https://yastatic.net/morda/_/P10948/d455c0yLXSa/Zb/r6BDVrIMGl/jvCn/CBwtOh/ycstTrX/6Wqy6-9/2fu/VlrscHSU0/tWPJEl/F2p_/oeHS29/1IJB-Cg/pX9s/R1w4V-/j4wXy/SgrNu8Y/yoD44ky/I8kJJr-/NiT-R/rJ895d/r-c9/4qFZY3/Ftvo9LC0/mI_YcH/q80sCq/f9KRW/H20-1IQk/oJal/zWg-VX/hLCOZc/HujxyiR/cjQAl/-Syndp70/TFEc2/wVtm2Ka/oAYM07/VID/K-eBlVGf/-5fZ2JL-/hZ/glJ0ab/YSXViGn/90-ouNTaf/plXC/NvM9bj/HiDrGVY/puEp/bfR49nrP/hnioxmy/tEAP/Ra0qYiv/DcZmN/A1qf/sSGyquFlE/GcGk-/ExheAN/me_H/0ynLc-vd60/r20L5B/A7b/p_eaD8EkP/aEcQMy/5hXx/dlL7VN/d_FBF5/PLw1h/Bjd8Hh8n/UQm-/NsEnCxpfU/xbAUJa/HTRq-/F0q6S/kbfWUq/z6VXM/uufkCQ/zyhMn0/bSI8i/nK9vvVLQz/YOp/adOyJss8-P/lu_/lcobDozZU/T8Y3/7K_b1Jg/YD9H14/Lnd7eB/jQuHq/6A_v3T/anH9Lpa/gYe/8pG-iz9r0/vTtya/TPR3HPne/m0dr/rED5wu/ZPyXXS/11WU4/YdLPuW/B7d1ZcT/8KT3/lWSgaZp0/baDPrF_7/aIAY-/Dpa/nTPQ8Ucy/f5M1/sVxizdR3k/t9l/OKu3Tto">
+        </section>
+
+    </div>
 </body>
 </html>
