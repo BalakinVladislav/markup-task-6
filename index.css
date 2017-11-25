@@ -71,14 +71,14 @@
     grid-area: f;
 }
 
-.news-header a:nth-child(1)
+.blue-head
 {
     color: #0054b9;
     font-weight: 430;
     font-size: 140%;
 }
 
-.news-header a:nth-child(2)
+.light-blue-head
 {
     color: #6da2e1;
     font-weight: 430;
@@ -88,6 +88,10 @@
 .news-date
 {
     font-size: 84.6%;
+}
+
+.gray-font
+{
     color: #999;
 }
 
@@ -95,6 +99,7 @@ ul
 {
     padding: 0;
     margin: 0;
+    margin-top: 20px;
 }
 
 li
@@ -122,7 +127,6 @@ li
 
 .value-change
 {
-    color: #999;
     margin-right: 6px;
     font-weight: 500;
     text-align: right;
@@ -203,4 +207,57 @@ li
 .adv-block
 {
     grid-area: l;
+}
+
+.visited-box
+{
+    grid-area: m;
+}
+
+.visited
+{
+    line-height: 2;
+}
+
+.anecdots
+{
+    margin-top: 20px;
+}
+
+.anecdots span
+{
+    font-size: 100% !important;
+}
+
+.tv-programm
+{
+    grid-area: n;
+    line-height: 2;
+}
+
+.tall-font
+{
+    font-size: 110%;
+}
+
+.news-scroll
+{
+    height: 200px;
+    overflow-y: scroll;
+    box-shadow: inset 0 30px 30px  -30px #333 , inset 0 -30px 30px  -30px #333;
+}
+
+.last-column
+{
+    grid-area: p;
+}
+
+.weather
+{
+    line-height: 2;
+}
+
+.black-font
+{
+    color: black;
 }
