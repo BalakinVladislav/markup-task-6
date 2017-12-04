@@ -246,9 +246,9 @@ button
     margin-top: 20px;
 }
 
-.anecdots span
+.anecdots .fun
 {
-    font-size: 100% !important;
+    font-size: 100%;
 }
 
 .tv-programm
