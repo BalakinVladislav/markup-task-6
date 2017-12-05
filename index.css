@@ -295,12 +295,31 @@ button
     font-size: 110%;
 }
 
+.auto-news
+{
+    position: relative;
+}
+
 .news-scroll
 {
     height: 200px;
     overflow-y: scroll;
-    box-shadow: inset -6px 16px
-        21px 0 #dadada, inset -10px -12px 21px 2px #dadada;
+}
+
+.top-shadow
+{
+    position: absolute;
+    bottom: 240px;
+    width: 80%;
+    box-shadow: 0px 42px 20px 10px #fff;
+}
+
+.bottom-shadow
+{
+    position: absolute;
+    top: 170px;
+    width: 80%;
+    box-shadow: 0 52px 20px 10px #fff 
 }
 
 .last-column
