@@ -300,6 +300,11 @@ button
     position: relative;
 }
 
+.news-scroll-container
+{
+    position: relative;
+}
+
 .news-scroll
 {
     height: 200px;
@@ -309,17 +314,17 @@ button
 .top-shadow
 {
     position: absolute;
-    bottom: 240px;
+    top: 0px;
     width: 80%;
-    box-shadow: 0 42px 20px 10px #fff;
+    box-shadow: 0 0 20px 10px #fff;
 }
 
 .bottom-shadow
 {
     position: absolute;
-    top: 170px;
+    bottom: 2px;
     width: 80%;
-    box-shadow: 0 52px 20px 10px #fff;
+    box-shadow: 0 0 20px 10px #fff;
 }
 
 .last-column
